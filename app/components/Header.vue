@@ -8,8 +8,7 @@
   >
     <div class="max-w-6xl mx-auto flex items-center justify-between">
       <div :class="scrolled || menuOpen ? 'text-black' : 'text-white'" class="transition-colors duration-300">
-        <span class="text-sm font-semibold tracking-widest uppercase">Adolfo Estudio</span>
-        <span class="block text-[10px] tracking-widest uppercase opacity-70">Fotografía</span>
+        <span class="text-lg font-semibold tracking-widest uppercase">ESTUDIO50</span>
       </div>
       <nav class="hidden md:flex gap-8">
         <a
