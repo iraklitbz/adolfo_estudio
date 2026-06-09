@@ -1,12 +1,20 @@
 <template>
   <section class="py-24 px-8 md:px-16 bg-gray-50">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-2xl md:text-3xl font-light italic text-center mb-4">
-        Soluciones visuales para marcas que quieren destacar.
-      </h2>
-      <div class="w-8 h-[2px] bg-black mx-auto mb-16" />
+      <div v-reveal class="reveal reveal-up text-center mb-16">
+        <h2 class="text-2xl md:text-3xl font-light italic mb-4">
+          Soluciones visuales para marcas que quieren destacar.
+        </h2>
+        <div class="w-8 h-[2px] bg-black mx-auto" />
+      </div>
       <div class="grid md:grid-cols-3 gap-8">
-        <div v-for="service in services" :key="service.title" class="flex flex-col">
+        <div
+          v-for="(service, i) in services"
+          :key="service.title"
+          v-reveal
+          class="reveal reveal-up flex flex-col"
+          :class="`reveal-delay-${i + 1}`"
+        >
           <img :src="service.image" :alt="service.title" class="w-full h-64 object-cover mb-6" />
           <div class="flex items-center gap-2 mb-3">
             <span class="text-xl">{{ service.icon }}</span>
@@ -23,6 +31,8 @@
 </template>
 
 <script setup lang="ts">
+const { vReveal } = useReveal()
+
 const services = [
   {
     icon: '👤',
