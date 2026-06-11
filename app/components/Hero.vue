@@ -3,7 +3,12 @@
     <img
       src="https://res.cloudinary.com/dnrtb2xev/image/upload/v1781005696/75526aab-f792-4cff-8583-a437809f78c6_imhjgz.png"
       alt="Hero"
-      class="absolute inset-0 w-full h-full object-cover"
+      class="absolute inset-0 w-full h-full object-cover hidden md:block"
+    />
+    <img
+      src="https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162165/primera_h4ajok.png"
+      alt="Hero"
+      class="absolute inset-0 w-full h-full object-cover md:hidden"
     />
     <div class="absolute inset-0 bg-black/40" />
     <div class="relative z-10 w-full max-w-md md:max-w-2xl">

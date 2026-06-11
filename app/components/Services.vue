@@ -66,19 +66,19 @@ const services = [
   {
     icon: '👤',
     title: 'Retrato profesional',
-    image: 'https://res.cloudinary.com/demo/image/upload/v1/samples/people/smiling-man',
+    image: 'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162165/segunda_sj1qp5.jpg',
     description: 'Retratos naturales y profesionales para transmitir cercanía, confianza y una imagen alineada con el valor de tu trabajo.',
   },
   {
     icon: '📷',
     title: 'Imagen de marca',
-    image: 'https://res.cloudinary.com/demo/image/upload/v1/samples/people/kitchen-bar',
+    image: 'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162166/tercera_d5ktkn.jpg',
     description: 'Fotografías creadas para comunicar de forma más auténtica, profesional y diferenciada.',
   },
   {
     icon: '🎤',
     title: 'Eventos corporativos',
-    image: 'https://res.cloudinary.com/demo/image/upload/v1/samples/people/jazz',
+    image: 'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162165/cuarta_mbsatl.jpg',
     description: 'Cobertura visual de eventos pensada para mostrar las personas, el ambiente y la esencia detrás de cada proyecto.',
   },
 ]
