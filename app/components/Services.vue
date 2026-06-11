@@ -32,9 +32,6 @@
             <h3 class="font-semibold text-sm">{{ service.title }}</h3>
           </div>
           <p class="text-xs text-gray-600 mb-4 flex-1">{{ service.description }}</p>
-          <a href="#" class="text-xs font-bold uppercase tracking-widest hover:opacity-70 transition">
-            Saber más →
-          </a>
         </div>
       </div>
 

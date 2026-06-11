@@ -8,22 +8,16 @@
         </h2>
       </div>
 
-      <div class="grid grid-cols-1 gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <img
           v-for="(img, i) in images"
           :key="i"
           v-reveal
           :src="img"
           alt="Proyecto"
-          class="reveal reveal-up w-full object-cover cursor-pointer hover:opacity-80 transition"
+          class="reveal reveal-up w-full object-cover cursor-pointer hover:opacity-80 transition md:h-64"
           @click="openModal(i)"
         />
-      </div>
-
-      <div v-reveal class="reveal reveal-up reveal-delay-1 text-center mt-10">
-        <a href="#" class="inline-block border border-black text-xs uppercase tracking-widest px-5 py-2.5 hover:bg-black hover:text-white transition">
-          Ver más proyectos
-        </a>
       </div>
     </div>
 
