@@ -5,7 +5,7 @@
         <img
           src="https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162166/undecima_vp8gbr.png"
           alt="Fotógrafo"
-          class="w-full h-72 object-cover md:aspect-video md:h-auto md:object-center"
+          class="w-full object-cover md:aspect-video md:h-auto md:object-center"
         />
       </div>
       <div v-reveal class="reveal reveal-right p-8 md:p-16">
