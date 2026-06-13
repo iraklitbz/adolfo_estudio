@@ -19,6 +19,12 @@
           @click="openModal(i)"
         />
       </div>
+
+      <div v-reveal class="reveal reveal-up text-center mt-10">
+        <a href="#contacto" class="inline-block border border-black text-xs uppercase tracking-widest px-6 py-3 hover:bg-black hover:text-white transition">
+          Ver todos los proyectos
+        </a>
+      </div>
     </div>
 
     <ImageModal

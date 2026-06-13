@@ -34,8 +34,12 @@
             <p>Desde hace más de 20 años trabajo creando imágenes para empresas, profesionales, marcas y proyectos editoriales, ayudándoles a transmitir una imagen más sólida, cercana y profesional.</p>
             <p>Hoy en día, la imagen es una parte fundamental de cómo una empresa o una persona son percibidas. Antes de una reunión, una llamada o una propuesta, muchas veces la primera impresión ya se ha producido.</p>
             <p>Una comunicación visual cuidada ayuda a transmitir confianza, profesionalidad y valor, factores que influyen directamente en la forma en que clientes y colaboradores perciben un negocio.</p>
-            <p>Mi objetivo es asesorar, generar confianza y proyectar una imagen alineada con el verdadero valor de lo que haces.</p>
+            <p>Por eso, además de crear fotografías naturales y profesionales, ayudo a mis clientes a definir la imagen que quieren transmitir para que cada fotografía refleje de forma coherente el nivel y la calidad de su trabajo.</p>
+            <p>Mi objetivo es ayudarte a destacar, generar confianza y proyectar una imagen alineada con el verdadero valor de lo que haces.</p>
           </div>
+          <a v-reveal href="#contacto" class="reveal reveal-up inline-block mt-8 border border-black text-xs uppercase tracking-widest px-6 py-3 hover:bg-black hover:text-white transition">
+            Contactar
+          </a>
         </div>
       </div>
 
@@ -51,8 +55,16 @@
           Una comunicación visual cuidada ayuda a transmitir confianza, profesionalidad y valor, factores que influyen directamente en la forma en que clientes y colaboradores perciben un negocio.
         </p>
         <p v-reveal class="reveal reveal-up">
-          Mi objetivo es asesorar, generar confianza y proyectar una imagen alineada con el verdadero valor de lo que haces.
+          Por eso, además de crear fotografías naturales y profesionales, ayudo a mis clientes a definir la imagen que quieren transmitir para que cada fotografía refleje de forma coherente el nivel y la calidad de su trabajo.
         </p>
+        <p v-reveal class="reveal reveal-up">
+          Mi objetivo es ayudarte a destacar, generar confianza y proyectar una imagen alineada con el verdadero valor de lo que haces.
+        </p>
+      </div>
+      <div v-reveal class="md:hidden reveal reveal-up mt-8">
+        <a href="#contacto" class="inline-block border border-black text-xs uppercase tracking-widest px-6 py-3 hover:bg-black hover:text-white transition">
+          Contactar
+        </a>
       </div>
     </div>
   </section>

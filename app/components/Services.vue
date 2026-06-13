@@ -27,56 +27,117 @@
           :class="`reveal-delay-${i + 1}`"
         >
           <img :src="service.image" :alt="service.title" class="w-full h-56 object-cover mb-5" />
-          <div class="flex items-center gap-2 mb-3">
-            <span class="text-xl">{{ service.icon }}</span>
-            <h3 class="font-semibold text-sm">{{ service.title }}</h3>
-          </div>
+          <h3 class="font-semibold text-sm mb-1">{{ service.title }}</h3>
           <p class="text-xs text-gray-600 mb-4 flex-1">{{ service.description }}</p>
+          <button
+            class="self-start text-xs uppercase tracking-widest font-bold border border-black px-4 py-2 hover:bg-black hover:text-white transition"
+            @click="toggle(i)"
+          >
+            {{ expanded[i] ? 'Cerrar' : 'Ver más →' }}
+          </button>
+          <div v-if="expanded[i]" class="grid grid-cols-2 gap-2 mt-4">
+            <img
+              v-for="(img, j) in service.gallery"
+              :key="j"
+              :src="img"
+              :alt="`${service.title} ${j + 1}`"
+              class="w-full h-32 object-cover cursor-pointer hover:opacity-80 transition"
+              @click="openModal(service.gallery, j)"
+            />
+          </div>
         </div>
       </div>
 
-      <!-- Mobile: vertical con fecha -->
-      <div class="md:hidden space-y-10">
+      <!-- Mobile: vertical -->
+      <div class="md:hidden space-y-12">
         <div
           v-for="(service, i) in services"
           :key="service.title + '-mobile'"
           v-reveal
-          class="reveal reveal-up cursor-pointer"
+          class="reveal reveal-up"
           :class="`reveal-delay-${i + 1}`"
         >
           <img :src="service.image" :alt="service.title" class="w-full h-64 object-cover" />
           <div class="mt-4">
             <h3 class="text-xs uppercase font-bold tracking-wide">{{ service.title }}</h3>
             <p class="text-xs text-gray-500 mt-1">{{ service.description }}</p>
-            <span class="inline-block mt-2 text-xs uppercase tracking-widest font-bold">2024 →</span>
+            <button
+              class="inline-block mt-3 text-xs uppercase tracking-widest font-bold border border-black px-4 py-2 hover:bg-black hover:text-white transition"
+              @click="toggle(i)"
+            >
+              {{ expanded[i] ? 'Cerrar' : 'Ver más →' }}
+            </button>
+          </div>
+          <div v-if="expanded[i]" class="grid grid-cols-2 gap-2 mt-4">
+            <img
+              v-for="(img, j) in service.gallery"
+              :key="j"
+              :src="img"
+              :alt="`${service.title} ${j + 1}`"
+              class="w-full h-40 object-cover cursor-pointer hover:opacity-80 transition"
+              @click="openModal(service.gallery, j)"
+            />
           </div>
         </div>
       </div>
     </div>
+
+    <ImageModal
+      v-model="modalOpen"
+      :images="modalImages"
+      :index="modalIndex"
+      @update:index="modalIndex = $event"
+    />
   </section>
 </template>
 
 <script setup lang="ts">
 const { vReveal } = useReveal()
 
+const expanded = ref<boolean[]>([false, false, false])
+const modalOpen = ref(false)
+const modalImages = ref<string[]>([])
+const modalIndex = ref(0)
+
+function toggle(i: number) {
+  expanded.value[i] = !expanded.value[i]
+}
+
+function openModal(images: string[], index: number) {
+  modalImages.value = images
+  modalIndex.value = index
+  modalOpen.value = true
+}
+
 const services = [
   {
-    icon: '👤',
-    title: 'Retrato profesional',
+    title: 'Retratos corporativos',
     image: 'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162165/segunda_sj1qp5.jpg',
-    description: 'Retratos naturales y profesionales para transmitir cercanía, confianza y una imagen alineada con el valor de tu trabajo.',
+    description: 'Retratos profesionales que transmiten confianza y profesionalidad.',
+    gallery: [
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162165/segunda_sj1qp5.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162165/quinta_enm7yu.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162167/sexta_gxukkl.jpg',
+    ],
   },
   {
-    icon: '📷',
-    title: 'Imagen de marca',
+    title: 'Imagen de marca y equipos',
     image: 'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162166/tercera_d5ktkn.jpg',
-    description: 'Fotografías creadas para comunicar de forma más auténtica, profesional y diferenciada.',
+    description: 'Fotografías que reflejan la esencia de tu empresa y la fuerza de tu equipo.',
+    gallery: [
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162166/tercera_d5ktkn.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162166/septima_khzxtp.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162165/octava_wpka70.jpg',
+    ],
   },
   {
-    icon: '🎤',
     title: 'Eventos corporativos',
     image: 'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162165/cuarta_mbsatl.jpg',
-    description: 'Cobertura visual de eventos pensada para mostrar las personas, el ambiente y la esencia detrás de cada proyecto.',
+    description: 'Cobertura profesional de eventos que comunica y deja huella.',
+    gallery: [
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162165/cuarta_mbsatl.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162165/novena_iyw3ma.jpg',
+    ],
   },
 ]
 </script>

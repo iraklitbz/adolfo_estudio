@@ -9,9 +9,9 @@
         />
       </div>
       <div v-reveal class="reveal reveal-right p-8 md:p-16">
-        <h2 class="text-xl md:text-2xl font-light italic mb-4">¿Hablamos sobre tu próximo proyecto?</h2>
+        <h2 class="text-xl md:text-2xl font-light italic mb-4">Hablemos de tu proyecto</h2>
         <p class="text-sm text-gray-300 mb-6">
-          Cuéntame qué necesitas y te ayudaré a encontrar la mejor forma de mostrarlo.
+          Cuéntame qué necesitas y te ayudaré a encontrar la mejor forma de comunicarlo.
         </p>
         <a href="mailto:info@estudio50.com" class="inline-block border border-white text-xs uppercase tracking-widest px-5 py-2.5 hover:bg-white hover:text-black transition">
           Contactar
