@@ -31,20 +31,10 @@
           <p class="text-xs text-gray-600 mb-4 flex-1">{{ service.description }}</p>
           <button
             class="self-start text-xs uppercase tracking-widest font-bold border border-black px-4 py-2 hover:bg-black hover:text-white transition"
-            @click="toggle(i)"
+            @click="openGallery(i)"
           >
-            {{ expanded[i] ? 'Cerrar' : 'Ver más →' }}
+            Ver más →
           </button>
-          <div v-if="expanded[i]" class="grid grid-cols-2 gap-2 mt-4">
-            <img
-              v-for="(img, j) in service.gallery"
-              :key="j"
-              :src="img"
-              :alt="`${service.title} ${j + 1}`"
-              class="w-full h-32 object-cover cursor-pointer hover:opacity-80 transition"
-              @click="openModal(service.gallery, j)"
-            />
-          </div>
         </div>
       </div>
 
@@ -63,20 +53,10 @@
             <p class="text-xs text-gray-500 mt-1">{{ service.description }}</p>
             <button
               class="inline-block mt-3 text-xs uppercase tracking-widest font-bold border border-black px-4 py-2 hover:bg-black hover:text-white transition"
-              @click="toggle(i)"
+              @click="openGallery(i)"
             >
-              {{ expanded[i] ? 'Cerrar' : 'Ver más →' }}
+              Ver más →
             </button>
-          </div>
-          <div v-if="expanded[i]" class="grid grid-cols-2 gap-2 mt-4">
-            <img
-              v-for="(img, j) in service.gallery"
-              :key="j"
-              :src="img"
-              :alt="`${service.title} ${j + 1}`"
-              class="w-full h-40 object-cover cursor-pointer hover:opacity-80 transition"
-              @click="openModal(service.gallery, j)"
-            />
           </div>
         </div>
       </div>
@@ -94,18 +74,13 @@
 <script setup lang="ts">
 const { vReveal } = useReveal()
 
-const expanded = ref<boolean[]>([false, false, false])
 const modalOpen = ref(false)
 const modalImages = ref<string[]>([])
 const modalIndex = ref(0)
 
-function toggle(i: number) {
-  expanded.value[i] = !expanded.value[i]
-}
-
-function openModal(images: string[], index: number) {
-  modalImages.value = images
-  modalIndex.value = index
+function openGallery(i: number) {
+  modalImages.value = services[i].gallery
+  modalIndex.value = -1
   modalOpen.value = true
 }
 
@@ -115,9 +90,19 @@ const services = [
     image: 'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162165/segunda_sj1qp5.jpg',
     description: 'Retratos profesionales que transmiten confianza y profesionalidad.',
     gallery: [
-      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162165/segunda_sj1qp5.jpg',
-      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162165/quinta_enm7yu.jpg',
-      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162167/sexta_gxukkl.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538606/1_mlpua8.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538630/2_qcxhkz.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538640/3_utdzpg.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538668/5_bntk6q.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538607/6_lvfr5p.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538607/7_eamefb.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538655/8_sejgf6.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538610/9_entrv6.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538628/10_fjgvyd.png',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538668/11_ydnqgm.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538646/12_enxpjo.png',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538643/13_c7fbfj.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538673/14_x8baul.jpg',
     ],
   },
   {
@@ -125,9 +110,15 @@ const services = [
     image: 'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162166/tercera_d5ktkn.jpg',
     description: 'Fotografías que reflejan la esencia de tu empresa y la fuerza de tu equipo.',
     gallery: [
-      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162166/tercera_d5ktkn.jpg',
-      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162166/septima_khzxtp.jpg',
-      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162165/octava_wpka70.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538619/1_g2d6js.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538618/2_iv4yxd.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538618/3_wkt5xp.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538624/4_lubgj3.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538620/5_u7gn9j.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538617/6_axh1qp.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538621/7_ctqkaw.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538658/8_cozdxa.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538669/9_cwki12.jpg',
     ],
   },
   {
@@ -135,8 +126,19 @@ const services = [
     image: 'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162165/cuarta_mbsatl.jpg',
     description: 'Cobertura profesional de eventos que comunica y deja huella.',
     gallery: [
-      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162165/cuarta_mbsatl.jpg',
-      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781162165/novena_iyw3ma.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538655/1_nwfqma.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538636/2_p5dcme.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538659/3_sncx0c.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538630/4_cw40qh.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538650/5_ftjm5i.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538656/6_k1nx4b.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538658/7_mhvxb3.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538663/8_zrm947.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538649/9_qiu2xg.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538657/10_hlrh4g.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538645/11_ffoknc.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538648/12_tl7akz.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781538629/13_c796j3.jpg',
     ],
   },
 ]
