@@ -16,6 +16,9 @@
         <a href="mailto:info@estudio50.com" class="inline-block border border-white text-xs uppercase tracking-widest px-5 py-2.5 hover:bg-white hover:text-black transition">
           Contactar
         </a>
+        <a href="https://wa.me/34658595141" target="_blank" class="inline-block border border-white text-xs uppercase tracking-widest px-5 py-2.5 hover:bg-white hover:text-black transition ml-3">
+          +34 658 5951 41
+        </a>
       </div>
     </div>
   </section>
