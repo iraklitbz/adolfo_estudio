@@ -5,7 +5,7 @@
       <div class="md:hidden">
         <span class="text-xs uppercase tracking-widest text-gray-500">Sobre mí</span>
         <h2 v-reveal class="reveal reveal-up text-xl font-bold leading-tight mt-2 mb-8">
-          Detrás de Estudio50 estoy yo, Adolfo Callejo.
+          Detrás de Estudio50, Adolfo Callejo.
         </h2>
         <img
           v-reveal
@@ -27,7 +27,7 @@
         <div>
           <span class="text-xs uppercase tracking-widest text-gray-500">Sobre mí</span>
           <h2 v-reveal class="reveal reveal-up text-2xl md:text-3xl font-bold leading-tight mt-2 mb-6">
-            Detrás de Estudio50 estoy yo, Adolfo Callejo.
+            Detrás de Estudio50, Adolfo Callejo.
           </h2>
           <div class="w-8 h-[2px] bg-black mb-6" />
           <div class="space-y-4 text-sm text-gray-600" v-reveal>

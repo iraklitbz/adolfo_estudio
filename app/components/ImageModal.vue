@@ -34,15 +34,23 @@
             leave-to-class="-translate-x-full"
           >
             <div v-if="isGrid" class="absolute inset-0 overflow-y-auto p-6 pt-16 scrollbar-hide">
-              <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-3">
+              <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-3">
                 <img
                   v-for="(img, j) in images"
                   :key="j"
                   :src="img"
                   alt=""
-                  class="w-full md:aspect-[3/4] object-cover md:cursor-pointer hover:opacity-80 transition rounded"
+                  class="w-3/5 mx-auto md:w-full md:aspect-[3/4] object-cover md:cursor-pointer hover:opacity-80 transition rounded"
                   @click="onImageClick(j)"
                 />
+              </div>
+              <div class="flex justify-center py-10">
+                <button
+                  class="border border-white text-white text-xs uppercase tracking-widest px-6 py-3 hover:bg-white hover:text-black transition"
+                  @click="close"
+                >
+                  Cerrar galería
+                </button>
               </div>
             </div>
           </Transition>
