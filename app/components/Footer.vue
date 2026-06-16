@@ -3,8 +3,7 @@
     <!-- Desktop: horizontal simple -->
     <div class="hidden md:flex items-center justify-between max-w-6xl mx-auto py-6 px-16">
       <div>
-        <span class="text-sm font-semibold tracking-widest uppercase">ESTUDIO50</span>
-        <span class="text-xs text-gray-400 ml-2">Fotografía</span>
+        <img src="/estudio50_negro.svg" alt="Estudio50" class="h-10" />
       </div>
       <div class="flex gap-6">
         <a href="https://www.linkedin.com/in/adolfo-callejo-8a4a753b" target="_blank" class="text-xs uppercase tracking-widest hover:opacity-70 transition">LinkedIn</a>
@@ -20,7 +19,7 @@
     <div class="md:hidden bg-neutral-900 text-white py-12 px-6 space-y-8">
       <p class="text-sm font-medium">Imagen que transmite.<br />Confianza que conecta.</p>
       <div>
-        <h3 class="text-lg font-bold tracking-widest uppercase mb-2">ESTUDIO50</h3>
+        <img src="/estudio50_negro.svg" alt="Estudio50" class="h-10 invert" />
         <p class="text-xs text-gray-400">Fotografía corporativa para empresas y profesionales que quieren transmitir lo que realmente son.</p>
       </div>
       <div class="flex gap-4">
