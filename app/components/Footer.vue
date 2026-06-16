@@ -10,6 +10,10 @@
         <a href="https://www.linkedin.com/in/adolfo-callejo-8a4a753b" target="_blank" class="text-xs uppercase tracking-widest hover:opacity-70 transition">LinkedIn</a>
       </div>
       <p class="text-xs text-gray-400">© 2024 Estudio50 Fotografía</p>
+      <div class="flex gap-4 text-xs text-gray-400">
+        <NuxtLink to="/aviso-legal" class="hover:text-black transition">Aviso legal</NuxtLink>
+        <NuxtLink to="/politica-privacidad" class="hover:text-black transition">Política de privacidad</NuxtLink>
+      </div>
     </div>
 
     <!-- Mobile: vertical completo -->
@@ -29,12 +33,12 @@
       </nav>
       <div class="space-y-1 text-xs text-gray-400">
         <p>info@estudio50.com</p>
-        <p>+34 600 000 000</p>
+        <p>+34 658 595 141</p>
       </div>
       <div class="border-t border-gray-700 pt-4 space-y-2">
         <div class="flex gap-4 text-xs text-gray-500">
-          <a href="#" class="hover:text-white transition">Aviso legal</a>
-          <a href="#" class="hover:text-white transition">Política de privacidad</a>
+          <NuxtLink to="/aviso-legal" class="hover:text-white transition">Aviso legal</NuxtLink>
+          <NuxtLink to="/politica-privacidad" class="hover:text-white transition">Política de privacidad</NuxtLink>
         </div>
         <p class="text-xs text-gray-500">© Estudio50. Todos los derechos reservados.</p>
       </div>
