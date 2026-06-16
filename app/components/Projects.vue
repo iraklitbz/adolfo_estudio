@@ -73,22 +73,31 @@ const projects = [
   {
     cover: 'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781592970/3_u6xuz9.jpg',
     gallery: [
-      // TODO: añadir imágenes de esta serie cuando las envíen
-      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781592970/3_u6xuz9.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781595102/_DSC3610_vys40r.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781595097/_DSC3732_e87se2.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781595096/DSC_1298_jaxzqn.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781595096/13_mxxicq.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781595095/DSC_1424_ycwmv8.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781595095/DSC_1500_mktxmp.jpg',
     ],
   },
   {
     cover: 'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781592961/1_y5ne5n.jpg',
     gallery: [
-      // TODO: añadir imágenes de esta serie cuando las envíen
-      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781592961/1_y5ne5n.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781595103/DSC_9163_t7hmag.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781595102/DSC_6600_hb4kdl.jpg',
     ],
   },
   {
     cover: 'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781592965/2_x98j8i.jpg',
     gallery: [
-      // TODO: añadir imágenes de esta serie cuando las envíen
-      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781592965/2_x98j8i.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781595101/_DSC2464_copia_nyp1ua.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781595100/_DSC2558_copia_qjmjbh.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781595100/_DSC1164_peverf.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781595099/_DSC2335_copia_uei1fp.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781595099/_DSC4664_xsfbbx.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781595098/_DSC2656_copia_mwdph1.jpg',
+      'https://res.cloudinary.com/dnrtb2xev/image/upload/v1781595097/_DSC4628_lbecnd.jpg',
     ],
   },
 ]

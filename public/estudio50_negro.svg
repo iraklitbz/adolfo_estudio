@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="350" viewBox="0 0 1400 350">
+  <rect width="100%" height="100%" fill="none"/>
+  <text x="250" y="180"
+        fill="#000000"
+        font-family="Helvetica, Arial, sans-serif"
+        font-size="90"
+        font-weight="300"
+        letter-spacing="18">ESTUDIO</text>
+
+  <line x1="920" y1="85" x2="920" y2="235"
+        stroke="#000000" stroke-width="3"/>
+
+  <text x="965" y="210"
+        fill="#000000"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="140">50</text>
+
+  <line x1="610" y1="250" x2="790" y2="250"
+        stroke="#000000" stroke-width="4"/>
+
+  <text x="395" y="315"
+        fill="#000000"
+        font-family="Helvetica, Arial, sans-serif"
+        font-size="34"
+        letter-spacing="10">FOTOGRAFÍA CORPORATIVA</text>
+</svg>

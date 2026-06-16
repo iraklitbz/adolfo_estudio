@@ -7,8 +7,8 @@
     ]"
   >
     <div class="max-w-6xl mx-auto flex items-center justify-between">
-      <div :class="scrolled || menuOpen ? 'text-black' : 'text-white'" class="transition-colors duration-300">
-        <span class="text-lg font-semibold tracking-widest uppercase">ESTUDIO50</span>
+      <div class="transition-colors duration-300">
+        <img src="/estudio50_negro.svg" alt="Estudio50" class="h-14" :class="scrolled || menuOpen ? 'invert-0' : 'invert'" />
       </div>
       <nav class="hidden md:flex gap-8">
         <a
