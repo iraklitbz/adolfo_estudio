@@ -13,7 +13,7 @@
         <p class="text-sm text-gray-300 mb-8 w-1/2">
           Cuéntame qué necesitas y te ayudaré a encontrar la mejor forma de comunicarlo.
         </p>
-        <a href="mailto:info@estudio50.com" class="inline-block border border-white text-xs uppercase tracking-widest px-6 py-3 hover:bg-white hover:text-black transition">
+        <a href="mailto:fotoempresa50@gmail.com" class="inline-block border border-white text-xs uppercase tracking-widest px-6 py-3 hover:bg-white hover:text-black transition">
           Contactar
         </a>
       </div>
@@ -32,7 +32,7 @@
         <p class="text-sm text-gray-300 mb-6">
           Cuéntame qué necesitas y te ayudaré a encontrar la mejor forma de comunicarlo.
         </p>
-        <a href="mailto:info@estudio50.com" class="inline-block border border-white text-xs uppercase tracking-widest px-5 py-2.5 hover:bg-white hover:text-black transition">
+        <a href="mailto:fotoempresa50@gmail.com" class="inline-block border border-white text-xs uppercase tracking-widest px-5 py-2.5 hover:bg-white hover:text-black transition">
           Contactar
         </a>
         <a href="https://wa.me/34658595141" target="_blank" class="inline-block border border-white text-xs uppercase tracking-widest px-5 py-2.5 hover:bg-white hover:text-black transition ml-3">

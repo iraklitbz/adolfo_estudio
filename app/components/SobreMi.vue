@@ -37,7 +37,7 @@
             <p>Por eso, además de crear fotografías naturales y profesionales, ayudo a mis clientes a definir la imagen que quieren transmitir para que cada fotografía refleje de forma coherente el nivel y la calidad de su trabajo.</p>
             <p>Mi objetivo es ayudarte a destacar, generar confianza y proyectar una imagen alineada con el verdadero valor de lo que haces.</p>
           </div>
-          <a v-reveal href="mailto:info@estudio50.com" class="reveal reveal-up inline-block mt-8 border border-black text-xs uppercase tracking-widest px-6 py-3 hover:bg-black hover:text-white transition">
+          <a v-reveal href="mailto:fotoempresa50@gmail.com" class="reveal reveal-up inline-block mt-8 border border-black text-xs uppercase tracking-widest px-6 py-3 hover:bg-black hover:text-white transition">
             Contactar
           </a>
         </div>
@@ -62,7 +62,7 @@
         </p>
       </div>
       <div v-reveal class="md:hidden reveal reveal-up mt-8">
-        <a href="mailto:info@estudio50.com" class="inline-block border border-black text-xs uppercase tracking-widest px-6 py-3 hover:bg-black hover:text-white transition">
+        <a href="mailto:fotoempresa50@gmail.com" class="inline-block border border-black text-xs uppercase tracking-widest px-6 py-3 hover:bg-black hover:text-white transition">
           Contactar
         </a>
       </div>

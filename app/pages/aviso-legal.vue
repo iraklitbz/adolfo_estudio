@@ -7,7 +7,7 @@
     <p>En cumplimiento del artículo 10 de la Ley 34/2002, de Servicios de la Sociedad de la Información y Comercio Electrónico, se informa:</p>
     <ul class="list-disc pl-5 space-y-1">
       <li><strong>Titular:</strong> Adolfo Callejo (Estudio50)</li>
-      <li><strong>Email:</strong> info@estudio50.com</li>
+      <li><strong>Email:</strong> fotoempresa50@gmail.com</li>
       <li><strong>Teléfono:</strong> +34 658 595 141</li>
     </ul>
 

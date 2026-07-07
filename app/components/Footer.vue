@@ -31,7 +31,7 @@
         <a v-for="link in links" :key="link.label" :href="link.href" class="block text-xs uppercase tracking-widest text-gray-300 hover:text-white transition">{{ link.label }}</a>
       </nav>
       <div class="space-y-1 text-xs text-gray-400">
-        <p>info@estudio50.com</p>
+        <p>fotoempresa50@gmail.com</p>
         <p>+34 658 595 141</p>
       </div>
       <div class="border-t border-gray-700 pt-4 space-y-2">

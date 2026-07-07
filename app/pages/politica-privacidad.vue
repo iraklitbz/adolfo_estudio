@@ -6,7 +6,7 @@
     <h2 class="font-semibold mt-4">1. Responsable del tratamiento</h2>
     <ul class="list-disc pl-5 space-y-1">
       <li><strong>Responsable:</strong> Adolfo Callejo (Estudio50)</li>
-      <li><strong>Email:</strong> info@estudio50.com</li>
+      <li><strong>Email:</strong> fotoempresa50@gmail.com</li>
     </ul>
 
     <h2 class="font-semibold mt-4">2. Finalidad del tratamiento</h2>
@@ -19,7 +19,7 @@
     <p>No se cederán datos a terceros salvo obligación legal.</p>
 
     <h2 class="font-semibold mt-4">5. Derechos</h2>
-    <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a info@estudio50.com.</p>
+    <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a fotoempresa50@gmail.com.</p>
 
     <h2 class="font-semibold mt-4">6. Cookies</h2>
     <p>Este sitio web no utiliza cookies de seguimiento ni analítica. Únicamente se emplean cookies técnicas necesarias para el funcionamiento de la web.</p>
